@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+:root {
+    --font-color: #000000;
+    --box-color: #d3e0e0;
+    --primary-color: #393D96;
+    --bg-color: #F5F5F5;
+    --primary-hover: #2c3077;
+}
+
+.top-section {
+    text-align: left;
+    margin: 4% 10%;
+}
+
+.head {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.page-subhead {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.items-container {
+    width: 80%;
+    background-color: var(--box-color);
+    margin: 4% 10%;
+    padding: 1.25rem;
+    border-radius: 5px;
+}
+
+.items-head {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 1.25rem 1.25rem 1rem;
+    text-align: left;
+    color: var(--primary-color);
+}
+
+.items-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 10%);
+    background-color: var(--bg-color);
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.strike:checked+.item-name {
+    text-decoration: line-through;
+}
+
+.item-cont {
+    display: flex;
+    justify-content: start;
+}
+
+.item-name {
+    font-weight: 500;
+    font-size: large;
+    margin: 1rem 1.25rem 1.25rem 1rem;
+    color: var(--font-color);
+    list-style-type: none;
+}
+
+.check {
+    margin: 10px;
+}
+
+.item-icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    margin-right: 1rem;
+}
+
+.icon-color {
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.icon-color:hover {
+    color: var(--primary-color);
+}
+
+.items-btn {
+    margin-top: 2rem;
+    text-align: end;
+}
+
+.float-action {
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    z-index: 1;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 80%);
+}
+
+.float-btn {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.float-btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.fal {
+    color: var(--bg-color);
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.modal-subhead {
+    margin: 1.5rem;
+}
+
+.card-title {
+    color: var(--font-color);
+    text-align: start;
+    padding: 5px;
+    margin: 5px 5px 0px 5px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.inp-box {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn-modal {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    font-weight: 700;
+    padding: 0.7rem;
+    min-width: 6.25rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2rem 3rem;
+}
+
+.btn-modal:hover {
+    background-color: var(--primary-hover);
+}
