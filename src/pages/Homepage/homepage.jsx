@@ -2,12 +2,14 @@ import { useState } from "react";
 import "./homepage.css";
 import Modal from 'react-modal';
 import { useItem } from "../../context/items-context";
+import { useAuth } from "../../context/auth-context";
 
 const Homepage = () =>{
 
 const [modal, setModal] = useState(false);
 const [check, setCheck] = useState(false);
 const { items, createItem, singleItem, setSingleItem, deleteItem, toggle} = useItem();
+const { logOut } = useAuth();
 
 const itemHandler = () =>{
 createItem();
@@ -56,6 +58,7 @@ return(
                 </button>
             </div>
         </section>
+        <button className="btn" onClick={() => logOut()}>LOGOUT</button>
 
         {
         modal && (
@@ -69,7 +72,7 @@ return(
                 <input type="text" placeholder="Item name" className="inp-box" name="username" value={singleItem.name}
                     onChange={(e)=>
                 setSingleItem({...singleItem, name: e.target.value})}/>
-                <button className="btn-modal" onClick={()=> itemHandler()}>CREATE</button>
+                <button className="btn" onClick={()=> itemHandler()}>CREATE</button>
             </main>
         </Modal>
         )

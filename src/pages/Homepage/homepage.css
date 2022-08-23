@@ -147,7 +147,7 @@
     margin: 10px;
 }
 
-.btn-modal {
+.btn {
     background-color: var(--primary-color);
     color: var(--bg-color);
     font-weight: 700;
