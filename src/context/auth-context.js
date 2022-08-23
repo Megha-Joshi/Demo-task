@@ -29,7 +29,15 @@ const AuthProvider = ({children}) =>{
         }
     }, []);
 
-    return (<AuthContext.Provider value={{googleLogin, logOut, user}}>{children}</AuthContext.Provider>)
+    useEffect(() => {
+        if(user=== null){
+        navigate("/");
+        }else{
+        navigate("/homepage");
+        }
+        }, [user]);
+
+    return (<AuthContext.Provider value={{googleLogin, logOut}}>{children}</AuthContext.Provider>)
 }
 
 const useAuth = () => useContext(AuthContext);
