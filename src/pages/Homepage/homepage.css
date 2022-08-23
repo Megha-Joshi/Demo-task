@@ -158,6 +158,6 @@
     margin: 2rem 3rem;
 }
 
-.btn-modal:hover {
+.btn:hover {
     background-color: var(--primary-hover);
 }

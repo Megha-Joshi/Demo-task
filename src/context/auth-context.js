@@ -37,7 +37,7 @@ const AuthProvider = ({children}) =>{
         }
         }, [user]);
 
-    return (<AuthContext.Provider value={{googleLogin, logOut}}>{children}</AuthContext.Provider>)
+    return (<AuthContext.Provider value={{googleLogin, logOut, user}}>{children}</AuthContext.Provider>)
 }
 
 const useAuth = () => useContext(AuthContext);
